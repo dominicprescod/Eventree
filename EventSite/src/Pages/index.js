@@ -1,0 +1,17 @@
+export { default as HomePage } from './HomePage';
+export { default as SigninPage } from './SigninPage';
+export { default as SignupPage } from './SignupPage';
+export { default as ForgotPasswordPage } from './ForgotPasswordPage';
+export { default as ResetPasswordPage } from './ResetPasswordPage';
+export { default as SearchPage } from './SearchPage';
+export { default as EventDetailPage } from './EventDetailPage';
+export { default as FAQsPage } from './FAQsPage';
+export { default as CommunityPage } from './CommunityPage';
+export { default as CommunityDetailPage } from './CommunityDetailPage';
+export { default as CreateCommunityPage } from './CreateCommunityPage';
+export { default as ActivatePage } from './ActivatePage';
+export { default as EventCreatePage } from './EventCreatePage';
+export { default as AdminPage } from './AdminPage';
+export { default as TermsPage } from './Terms';
+export { default as AboutUsPage } from './AboutUs';
+export { default as PrivacyPolicyPage } from './PrivacyPolicy';

@@ -1,0 +1,98 @@
+@import '../../Theme.scss';
+
+.searcheventthumb-component {
+  width: 100%;
+  background: $main-bg;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  position: relative;
+  .item-content {
+    .section {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      .left-part {
+        max-width: 300px;
+      }
+      h2 {
+        font-size: 14px;
+        line-height: 20px;
+      }
+      .description {
+        font-size: 12px;
+        line-height: 17px;
+      }
+      .created-time {
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .like-btn {
+        cursor: pointer;
+        width: fit-content;
+        margin: auto 0 0 auto;
+        p {
+          font-size: 10px;
+          line-height: 14px;
+          margin-right: 5px;
+        }
+        svg {
+          font-size: 15px;
+        }
+      }
+      &:last-child {
+        margin-top: auto;
+        align-items: flex-end;
+      }
+    }                    
+  }
+  .publish_btn {
+    background: white;
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    border-radius: 50%;
+    padding: 0;
+    color: $main-bg;
+    position: absolute;
+    right: 12px;
+    top: 9px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .searcheventthumb-component {
+    max-width: 640px;
+    height: 133px;
+    img {
+      width: 200px;
+      height: 133px;
+      border-radius: 10px;
+    }
+    .item-content {
+      flex: 1;
+      padding: 8px 9px 8px 19px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .searcheventthumb-component {
+    max-width: 330px;
+    flex-direction: column;
+    img {
+      height: 247px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .item-content {
+      padding: 8px;
+      h2 {
+        margin-bottom: 5px;
+      }
+      .description {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

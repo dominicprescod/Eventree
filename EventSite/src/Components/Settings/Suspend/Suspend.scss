@@ -1,0 +1,11 @@
+@import '../../../Theme.scss';
+
+.suspend-component {
+	.save-btn {
+		height: 40px;
+		max-width: 240px;
+		margin-top: 20px;
+		background: #FF3366 !important;
+		color: white !important;
+	}
+}

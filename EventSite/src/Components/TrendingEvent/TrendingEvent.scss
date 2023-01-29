@@ -1,0 +1,32 @@
+@import '../../Theme.scss';
+
+.trendingevent-component {
+    height: 265px;
+    position: relative;
+    cursor: pointer;
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    .trending-description {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 70px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        color: $primary-bg;
+        background: rgba($color: $second-bg, $alpha: 0.52);
+        padding: 13px 8px;
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: bold;
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+}

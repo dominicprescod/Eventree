@@ -1,0 +1,87 @@
+@import '../../../Theme.scss';
+
+.dashboard-page {
+	.chart-area {
+		.block-content {
+			overflow-x: auto;
+		}
+	}
+	.action-title {
+		height: 60px;
+		border-bottom: 1px solid #707070;
+		margin: 0 -15px;
+		padding: 0 15px;
+		a {
+			font-size: 14px;
+			color: #07A4FF;
+			text-decoration: underline;
+			font-weight: 600;
+		}
+	}
+	.ticket-group {
+		margin-top: 18px;
+		.ticket-title {
+			justify-content: space-between;
+			margin-bottom: 11px;
+			p {
+				color: white;
+				font-size: 16px;
+			}
+		}
+		.progress-bar {
+			height: 10px;
+			border-radius: 10px;
+			background: white;
+			div {
+				border-radius: 10px;
+				background: #827AF3;
+			}
+		}
+		&:nth-of-type(odd) {
+			.progress-bar {
+				div {
+					background: #FF3366;
+				}
+			}
+		}
+	}
+	.ticket-item {
+		height: 46px;
+		margin: 0 -15px;
+		padding: 0 15px;
+		justify-content: space-between;
+		background: $main-bg;
+		p {
+			font-size: 16px;
+			&:first-child {
+				max-width: 70%;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+		}
+		&:nth-of-type(odd) {
+			background: $second-bg;
+		}
+	}
+	.ticket-block {
+		height: 100%;
+		margin-bottom: 0;
+		padding-top: 0;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.dashboard-page {
+		.schedule-area {
+			max-width: 620px;
+			width: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.dashboard-page {
+		width: calc(100vw - 30px);
+	}
+}

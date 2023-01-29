@@ -1,0 +1,162 @@
+@import '../../Theme.scss';
+
+.signup-page {
+  padding-bottom: 20px;
+
+  .auth-container {
+    max-width: 530px;
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 10px;
+
+    h1 {
+      font-weight: normal;
+      font-size: 30px;
+      line-height: 43px;
+      margin-bottom: 4px;
+      text-align: center;
+      color: $primary-bg;
+    }
+
+    p {
+      font-size: 12px;
+
+      &.or {
+        margin-bottom: 13px;
+      }
+
+      &.detail {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 20px;
+        font-weight: 300;
+        color: $secondary-text;
+      }
+    }
+
+    form {
+      width: 100%;
+
+      .MuiTextField-root {
+        margin-bottom: 16px;
+        width: 100%;
+      }
+
+      .gender-title {
+        font-size: 12px;
+        margin-bottom: 8px;
+        margin-top: 4px;
+        color: $secondary-text;
+        padding: 0px 14px;
+      }
+
+      .age-title {
+        color: $secondary-text;
+        font-size: 12px;
+        background: transparent;
+
+      }
+
+      .age-input {
+        background-color: $second-bg;
+        color: $secondary-text;
+        width: 100%;
+      }
+
+      .slider {
+        color: #3C599B;
+        padding: 4px 16px 16px;
+      }
+
+      .radio-group {
+        padding: 0px 20px 8px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        label {
+          font-size: 8px;
+          size: 12px;
+          color: $secondary-text;
+        }
+
+        .radio {
+          color: #3C599B;
+          font-size: 8px;
+
+          &:checked {
+            color: #3C599B;
+          }
+        }
+      }
+
+      .auth-input {
+        background-color: $second-bg;
+        height: 44px;
+        color: $secondary-text;
+        width: 100%;
+
+        fieldset {
+          border-color: rgba($color: #707070, $alpha: 0.15);
+        }
+
+        ::placeholder {
+          color: $secondary-text;
+          opacity: 0.8;
+        }
+
+        input {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .auth-btn {
+      height: 50px;
+      border-radius: 26px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 13px;
+      color: white;
+
+      img {
+        margin-right: 8px;
+      }
+
+      &.facebook {
+        background-color: #3C599B;
+      }
+
+      &.gplus {
+        background-color: #E3411F;
+      }
+    }
+
+    .custom-writings {
+      color: $primary-bg;
+      width: 100%;
+      font-size: 12px;
+      margin-bottom: 13px;
+
+      a {
+        color: $secondary-text;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .signup-page {
+    .auth-container {
+      padding: 18px 60px 36px 60px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .signup-page {
+    .auth-container {
+      padding: 18px 10px;
+    }
+  }
+}

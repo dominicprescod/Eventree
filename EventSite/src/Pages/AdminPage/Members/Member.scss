@@ -1,0 +1,17 @@
+@import '../../../Theme.scss';
+
+.eventmanage-page {
+	.title-part {
+		.btn-primary {
+			margin-left: 20px;
+			height: 30px;
+		}
+	}
+	.edit-btn {
+		color: #7882A2;
+	}
+	.del-btn {
+		color: #FF3366;
+		margin-left: 30px;
+	}
+}

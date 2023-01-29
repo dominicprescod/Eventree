@@ -1,0 +1,34 @@
+@import '../../../Theme.scss';
+
+.calendar-page {
+	.sub-block {
+		.status-icon {
+			width: 10px;
+			height: 10px;
+			margin-right: 6px;
+			background-color: #46C79E;
+			border-radius: 50%;
+		}
+		.create-btn {
+			border-radius: 26px;
+			margin-top: 18px;
+			height: 30px;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.calendar-page {
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.calendar-page {
+		.block-title {
+			font-size: 18px !important;
+		}
+		.create-btn {
+			max-width: 190px;
+		}
+	}
+}

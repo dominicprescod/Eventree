@@ -1,0 +1,31 @@
+@import '../../../Theme.scss';
+
+.ticketmanage-page {
+	.title-part {
+		.btn-primary {
+			margin-left: 20px;
+			height: 30px;
+		}
+	}
+	.action-btn {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+	.accept-btn {
+		color: #46C79E;
+	}
+	.decline-btn {
+		color: #FF3366;
+		margin-left: 30px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.ticketmanage-page {
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.ticketmanage-page {
+	}
+}

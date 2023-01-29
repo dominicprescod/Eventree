@@ -1,0 +1,52 @@
+@import '../../Theme.scss';
+
+.schedulecalendar-component {
+	.fc-header-toolbar {
+		margin-bottom: 20px;
+		button {
+			height: 24px;
+			min-width: 40px;
+			font-size: 12px;
+			padding: 0;
+			.fc-icon {
+				font-size: 12px;
+			}
+		}
+		.fc-left {
+			.fc-button-group {
+				button {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+				}
+			}
+		}
+		.fc-center {
+			h2 {
+				font-size: 18px;
+			}
+		}
+		.fc-right {
+			button {
+				min-width: 48px;
+			}
+		}
+	}
+	table, tr, th, td {
+		border-color: rgba($color: #7882A2, $alpha: 0.2);
+	}
+	th {
+		font-size: 15px;
+		padding: 8px 0;
+		color: #7882A2;
+	}
+	.fc-today {
+		background: $second-bg !important;
+	}
+	.fc-more-popover {
+		background: $second-bg;
+		.fc-header {
+			color: $main-bg;
+		}
+	}
+}

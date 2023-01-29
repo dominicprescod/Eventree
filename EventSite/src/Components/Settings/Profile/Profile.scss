@@ -1,0 +1,212 @@
+@import '../../../Theme.scss';
+
+.profile-component {
+	.MuiFormGroup-root {
+		margin-bottom: 30px;
+		.form-title {
+			font-size: 18px;
+			margin-bottom: 8px;
+		}
+		.radio-group {
+			padding: 5px 20px 0px;
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+
+			label {
+				font-size: 8px;
+				size: 12px;
+				color: $secondary-text;
+			}
+
+			.radio {
+				color: #3C599B;
+				font-size: 8px;
+
+				&:checked {
+					color: #3C599B;
+				}
+			}
+		}
+		.age-input {
+			background-color: $second-bg;
+			color: $secondary-text;
+			width: 100%;
+		}
+		.age-title {
+			color: $secondary-text;
+			font-size: 12px;
+			text-align: center;
+			background: transparent;
+		}
+	}
+	.custom-input {
+		height: 40px;
+		font-size: 14px;
+		//background:red;
+		::placeholder {
+			font-weight: normal;
+		}
+		&.textarea-input {
+			min-height: 90px;
+			height: initial;
+		}
+		svg {
+			color: white;
+		}
+
+	}
+	.menu-props{
+		background: #23262C;
+		color: 	red;
+
+	}
+	.email-part {
+		p {
+			color: #07A4FF;
+			margin-right: 15px;
+		}
+	}
+	.change-btn {
+		width: 119px;
+		height: 35px;
+		background: $second-bg;
+		border-radius: 5px;
+		border: 1px solid #707070;
+		font-size: 14px;
+		color: #707070;
+		cursor: pointer;
+		&.second {
+			margin-top: 11px;
+		}
+	}
+	.file_input {
+		display: none;
+	}
+	.photo-area {
+		width: 170px;
+		height: 170px;
+		background: $second-bg;
+		border-radius: 5px;
+		border: 1px solid #707070;
+		img {
+			width: 100%;
+			height: 100%;
+			border-radius: 5px;
+		}
+		div {
+			cursor: pointer;
+			color: #707070;
+		}
+	}
+	.save-btn {
+		height: 40px;
+		max-width: 240px;
+		margin-top: 10px;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.profile-component {
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.profile-component {
+	}
+}
+
+
+.ReactTags__tags {
+	position: relative;
+}
+
+.ReactTags__clearAll {
+	cursor: pointer;
+	padding: 10px;
+	margin: 10px;
+	background: #f88d8d;
+	color: #fff;
+	border: none;
+}
+
+/* Styles for the input */
+.ReactTags__tagInput {
+	border-radius: 2px;
+	display: inline-block;
+}
+.ReactTags__tagInput input.ReactTags__tagInputField,
+.ReactTags__tagInput input.ReactTags__tagInputField:focus {
+	height: 28px;
+	margin: 0;
+	font-size: 12px;
+	border: 1px solid #eee;
+	min-width: 80px;
+	width: 96px;
+	background: #23262C;
+	color: white;
+	padding-left: 4px;
+	padding-right: 4px;
+
+}
+
+.ReactTags__editInput {
+	border-radius: 1px;
+}
+
+.ReactTags__editTagInput {
+	display: inline-flex;
+}
+
+/* Styles for selected tags */
+.ReactTags__selected span.ReactTags__tag {
+	border: 1px solid #ddd;
+	background: #23262C;
+	color: white;
+	font-size: 12px;
+	display: inline-block;
+	padding: 5px;
+	margin: 0 5px;
+	border-radius: 2px;
+}
+.ReactTags__selected a.ReactTags__remove {
+	color: #23262f;
+	margin-left: 5px;
+	cursor: pointer;
+}
+//
+/* Styles for suggestions */
+.ReactTags__suggestions {
+	position: absolute;
+}
+.ReactTags__suggestions ul {
+	list-style-type: none;
+	box-shadow: 0.05em 0.01em 0.5em rgba(0, 0, 0, 0.2);
+	background: white;
+	width: 200px;
+}
+.ReactTags__suggestions li {
+	border-bottom: 1px solid #ddd;
+	padding: 5px 10px;
+	margin: 0;
+}
+.ReactTags__suggestions li mark {
+	text-decoration: underline;
+	background: none;
+	font-weight: 600;
+}
+.ReactTags__suggestions ul li.ReactTags__activeSuggestion {
+	background: #b7cfe0;
+	cursor: pointer;
+}
+
+.ReactTags__remove {
+	border: none;
+	cursor: pointer;
+	background: none;
+	color: white;
+}
+
+.MuiSelect-select:not([multiple]) option, .MuiSelect-select:not([multiple]) optgroup {
+	background-color: #23262C !important;
+}

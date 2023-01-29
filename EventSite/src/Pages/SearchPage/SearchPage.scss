@@ -1,0 +1,143 @@
+@import '../../Theme.scss';
+
+.search-page {
+  padding-bottom: 54px;
+  .start-area {
+    width: 100%;
+    background-image: linear-gradient(to bottom, rgba($color: $main-bg, $alpha: 0), $main-bg), url('../../Assets/Images/search-bg.png');
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+    .custom-container {
+      height: 100%;
+      color: white;
+      position: relative;
+      .writings {
+        text-align: center;
+        h1 {
+          font-size: 30px;
+          line-height: 43px;
+        }
+        p {
+          font-size: 20px;
+          font-weight: bold;
+          line-height: 27px;
+        }
+      }
+      .search-area {
+        max-width: 940px;
+        margin: 0 auto;
+        width: 100%;
+        .MuiFormControl-root {
+          margin-right: 8px;
+          width: 100%;
+        }
+        .search-btn {
+          font-size: 14px !important;
+          font-weight: bold;
+        }
+        .search-element {
+          width: 100%;
+          height: 48px;
+          font-size: 12px;
+          background: white;
+        }
+        .MuiGrid-item {
+          padding: 8px;
+        }
+        .search-input-field {
+          border-color: white;
+          label {
+            color: #ced4da;
+            &.Mui-focused {
+              color: #ced4da;
+            }
+          }
+          .MuiInput-underline {
+            &::before {
+              border-bottom-color: white;
+            }
+            &::after {
+              border-bottom-color: white
+            }
+          }
+          input {
+            color: white;
+            border-color: white;
+          }
+
+        }
+        .select-props{
+          color: white;
+          width: 100%;
+          .MuiSelect-select{
+            option{
+              background: #262B33;
+            }
+          }
+        }
+      }
+    }
+  }
+  form {
+    width: 100%;
+  }
+  .search-result {
+    padding-top: 40px;
+    .no-result {
+      text-align: center;
+      font-size: 24px;
+    }
+    .show-result {
+      width: 100%;
+      h1 {
+        text-align: center;
+        margin-bottom: 25px;
+      }
+      .search-item {
+        margin-bottom: 16px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .view-btn {
+      width: 162px;
+      height: 52px;
+      border-radius: 26px;
+      margin: 37px auto 0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .search-page {
+    .start-area {
+      height: 600px;
+      .custom-container {
+        .writings {
+          margin-bottom: 40px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .search-page {
+    .start-area {
+      height: 435px;
+      .custom-container {
+        .writings {
+          margin-bottom: 18px;
+        }
+        .search-element {
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

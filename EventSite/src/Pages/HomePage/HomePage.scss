@@ -1,0 +1,152 @@
+@import '../../Theme.scss';
+
+.home-page {
+    .start-area {
+        width: 100%;
+        background-image: linear-gradient(to bottom, rgba($color: $second-bg, $alpha: 0), $second-bg), url('../../Assets/Images/home-bg.png');
+        background-position: center;
+        background-size: cover;
+        position: relative;
+
+        .custom-container {
+            height: 100%;
+            color: white;
+            position: relative;
+            .writings {
+                p {
+                    font-weight: bold;
+                }
+                .mail-box {
+                    height: 40px;
+                    margin-top: 20px;
+                    .mail-input {
+                        height: 100%;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        font-size: 12px;
+                        padding: 0 0 0 17px;
+                        border: none;
+                    }
+                    .start-btn {
+                        height: 100%;
+                        width: 103px;
+                        border-radius: 0;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 5px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+    .slider-area {
+        padding: 32px 0;
+        &.trending {
+            background: $second-bg;
+        }
+        &.upcoming {
+            background: #2D333B;
+        }
+        .view-btn {
+            width: 162px;
+            height: 52px;
+            border-radius: 26px;
+            margin: 30px auto 0 auto;
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+    .carousel-btn {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+        color: $main-bg;
+    }
+    .items-wrapper {
+        padding: 0 6px;
+    }
+    .inner-wrapper {
+        padding-bottom: 6px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .home-page {
+        .start-area {
+            height: 600px;
+            .custom-container {
+                .writings {
+                    padding-left: 104px;
+                    width: fit-content;
+                    h1 {
+                        font-size: 30px;
+                        line-height: 43px;
+                    }
+                    p {
+                        font-size: 20px;
+                        line-height: 27px;
+                    }
+                    .mail-box {
+                        .mail-input {
+                            width: 174px;
+                        }
+                    }
+                }
+            }
+        }
+        .slider-area {
+            h1 {
+                font-size: 30px;
+                margin-bottom: 30px;
+            }
+        }
+        .carousel-btn {
+            &.left-btn {
+                right: 22px;
+            }
+            &.right-btn {
+                left: 22px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .home-page {
+        .start-area {
+            height: 360px;
+            .custom-container {
+                align-items: center;
+                text-align: center;
+                .writings {
+                    width: 100%;
+                    align-items: center;
+                    h1 {
+                        font-size: 24px;
+                        line-height: 35px;
+                    }
+                    p {
+                        font-size: 16px;
+                        line-height: 21px;
+                    }
+                    .mail-box {
+                        width: 100%;
+                        max-width: 400px;
+                        .mail-input {
+                            flex: 1;
+                        }
+                    }
+                }
+            }
+        }
+        .slider-area {
+            h1 {
+                font-size: 24px;
+                margin-bottom: 17px;
+                text-align: center;
+            }
+        }
+    }
+}

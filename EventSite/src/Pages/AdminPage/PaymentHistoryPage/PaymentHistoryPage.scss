@@ -1,0 +1,24 @@
+@import '../../../Theme.scss';
+
+.paymenthistory-page {
+	.action-btn {
+		cursor: pointer;
+		text-decoration: underline;
+	}
+	.accept-btn {
+		color: #827AF3;
+	}
+	.status {
+		color: #46C79E;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.paymenthistory-page {
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.paymenthistory-page {
+	}
+}

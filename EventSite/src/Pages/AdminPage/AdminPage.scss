@@ -1,0 +1,172 @@
+@import '../../Theme.scss';
+
+.admin {
+	margin-top: -60px;
+	min-height: 100vh;
+	height: 100vh;
+	.side-btn {
+		color: white;
+	}
+	.admin-header {
+		height: 60px;
+		background: $main-bg;
+		z-index: 150;
+		.logo-part{
+			box-sizing: border-box;
+		}
+		.menu-area {
+			justify-content: space-between;
+			flex: 1;
+			.header-menus {
+				.header-link {
+					color: $primary-text;
+					font-size: 14px;
+					margin-right: 28px;
+					&.active {
+						color: $primary-bg;
+					}
+					&:last-child {
+						margin: 0;
+					}
+				}
+				.avatar-area {
+					cursor: pointer;
+					position: relative;
+					.avatar {
+						width: 35px;
+						height: 35px;
+						border-radius: 50%;
+					}
+					.account-menu {
+						position: absolute;
+						background-color: $second-bg;
+						right: -10px;
+						top: 38px;
+						color: $primary-text;
+						width: 160px;
+						border-radius: 4px;
+						padding: 9px 0;
+						outline: none;
+						p {
+							padding: 4px 0 4px 15px;
+							cursor: pointer;
+							&:hover {
+								color: $primary-bg;
+							}
+							&:first-child {
+								color: $primary-bg;
+								&:hover {
+									color: $primary-bg;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.admin-content {
+		flex: 1;
+		display: flex;
+		background: $main-bg;
+		.sidebar {
+			width: 332px;
+			height: 100%;
+			background: $second-bg;
+			padding-top: 10px;
+			box-sizing: border-box;
+			.menu-item {
+				height: 32px;
+				padding-left: 30px;
+				color: #7882A2;
+				margin-bottom: 20px;
+				p {
+					font-size: 15px;
+					margin-left: 36px;
+				}
+				&.active {
+					color: $primary-bg;
+					padding-left: 28px;
+					border-left: 2px solid $primary-bg;
+					border-right: 2px solid $primary-bg;
+					p {
+						font-weight: bold;
+					}
+				}
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			&.closed {
+				animation: sidebarHide 0.2s ease-out;
+				width: 80px;
+				.menu-item {
+					border-right: none;
+					p {
+						display: none;
+					}
+				}
+			}
+			&.open {
+				animation: sidebarShow 0.2s ease-out;
+			}
+		}
+		.main-content {
+			flex: 1;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.admin {
+		.admin-header {
+			padding: 0 30px;
+			position: relative;
+			.logo-part{
+				width: 302px;
+			}
+			.menu-area {
+				padding-left: 30px;
+			}
+		}
+		.admin-content {
+			max-height: calc(100% - 60px);
+			.main-content {
+				padding: 18px 30px;
+				overflow-y: auto;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.admin {
+		width: 100vw;
+		.admin-header {
+			padding: 0 15px;
+			position: fixed;
+			width: 100%;
+			.logo-part{
+				width: fit-content
+			}
+		}
+		.admin-content {
+			padding-top: 60px;
+			width: 100%;
+			.main-content {
+				width: 100%;
+				padding: 15px;
+			}
+		}
+	}
+}
+
+@keyframes sidebarShow {
+	0% { width: 80px; }
+	100% { width: 332px; }
+}
+  
+@keyframes sidebarHide {
+	0% { width: 332px; }
+	100% { width: 80px; }
+}

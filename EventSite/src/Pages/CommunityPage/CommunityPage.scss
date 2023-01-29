@@ -1,0 +1,128 @@
+@import '../../Theme.scss';
+
+.community-page {
+  .start-area {
+    width: 100%;
+    background: $main-bg;
+    position: relative;
+    box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.34);
+
+    .custom-container {
+      position: relative;
+      .writings {
+        text-align: center;
+      }
+      .search-area {
+        .tags {
+          p {
+            cursor: pointer;
+            font-size: 16px;
+            line-height: 30px;
+            margin-right: 38px;
+            &.activated {
+              color: $primary-bg;
+            }
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+          .create-btn {
+            width: 137px;
+            height: 40px;
+            border-radius: 20px;
+            font-size: 12px;
+          }
+        }
+        .MuiTextField-root {
+          max-width: 463px;
+          width: 100%;
+        }
+        .search-text {
+          height: 40px;
+          border-radius: 20px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+  .search-result {
+    .community-thumb {
+      margin-bottom: 30px;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .community-page {
+    .start-area {
+      padding: 23px 0 29px;
+      .custom-container {
+        .writings {
+          margin-bottom: 40px;
+          h1 {
+            font-size: 30px;
+            line-height: 43px;
+          }
+          p {
+            font-size: 19px;
+            line-height: 30px;
+          }
+        }
+        .search-area {
+          justify-content: space-between;
+          .tags {
+            margin-right: 40px;
+            .create-btn {
+              margin-left: 38px;
+            }
+          }
+          .MuiTextField-root {
+            flex: 1;
+          }
+        }
+      }
+    }
+    .search-result {
+      padding: 27px 0 158px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .community-page {
+    .start-area {
+      padding: 11px 0 29px;
+      .custom-container {
+        .writings {
+          margin-bottom: 20px;
+          h1 {
+            font-size: 24px;
+            line-height: 35px;
+          }
+          p {
+            font-size: 16px;
+            line-height: 30px;
+          }
+        }
+        .search-area {
+          flex-direction: column-reverse;
+          .MuiTextField-root {
+            margin-bottom: 20px;
+          }
+          .tags {
+            flex-direction: column;
+            .create-btn {
+              margin-top: 24px;
+            }
+          }
+        }
+      }
+    }
+    .search-result {
+      padding: 15px 0;
+    }
+  }
+}

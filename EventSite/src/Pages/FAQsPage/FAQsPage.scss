@@ -1,0 +1,45 @@
+@import '../../Theme.scss';
+
+.faqs-page {
+  .faq-content {
+    box-sizing: border-box;
+    max-width: 986px;
+    width: 100%;
+    background: $main-bg;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .faqs-page {
+    padding: 35px 0 135px;
+    .faq-content {
+      padding: 21px 61px 47px 23px;
+      h1 {
+        font-size: 30px;
+        line-height: 43px;
+      }
+      p {
+        font-size: 19px;
+        line-height: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .faqs-page {
+    padding: 15px 0 25px;
+    .faq-content {
+      padding: 15px 12px 27px 12px;
+      h1 {
+        font-size: 18px;
+        line-height: 25px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 30px;
+      }
+    }
+  }
+}

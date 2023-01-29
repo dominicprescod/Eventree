@@ -1,0 +1,339 @@
+@import '../../Theme.scss';
+
+.calendar-event-container {
+  padding: 12px;
+  min-width: 600px;
+  color: white;
+  //background: #262C34 !important;
+
+  .title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8px;
+
+    h4 {
+      font-size: 18px;
+      color: white;
+    }
+  }
+
+  .body-container {
+    background: #262C34 !important;
+  }
+
+  .division {
+    height: 1px;
+    width: 100%;
+    color: #2D333B;
+    background: #2D333B;
+    width: 100%;
+  }
+
+  .main-container {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+
+    .avatar-img {
+      width: 114px;
+      height: 114px;
+      border-radius: 50%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .description-title {
+      color: white;
+      font-size: 16px;
+      margin-top: 24px;
+    }
+  }
+
+  .footer-container {
+
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    .close-btn {
+      border-radius: 4px;
+      background: #212121;
+      color: white;
+      padding: 6px !important;
+    }
+
+    .save-btn {
+      height: 40px;
+      border-radius: 4px;
+      color: white;
+      padding: 6px !important;
+    }
+  }
+
+}
+
+.eventcreate-page {
+  .eventcreate-content {
+    width: 100%;
+  }
+
+  .form-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+    color: white;
+  }
+
+  .MuiFormControl-root {
+    width: 100%;
+  }
+
+  .MuiFormControlLabel-root {
+    margin-left: 0;
+  }
+
+  .rich-editor {
+    background-color: $second-bg;
+    border-color: $second-bg;
+
+    &.invalid {
+      border-color: #f44336;
+    }
+
+    option {
+      background-color: $second-bg;
+    }
+  }
+
+  .content-error {
+    color: #f44336;
+    font-size: 12px;
+    margin-top: 3px;
+    margin-left: 14px;
+  }
+
+  .custom-input {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+
+    ::placeholder {
+      font-weight: normal;
+    }
+
+    &.textarea-input {
+      min-height: 90px;
+      height: initial;
+    }
+
+    svg {
+      color: white;
+    }
+  }
+
+  .file_input {
+    display: none;
+  }
+
+  .organizer-create-btn {
+    height: 32px;
+    max-width: 240px;
+    margin-top: 12px;
+    color: white !important;
+  }
+
+  .create-btn {
+    height: 40px;
+    max-width: 240px;
+    margin-top: 20px;
+  }
+
+  .location-search-input {
+    height: 40px;
+    color: white;
+    background-color: #23262C;
+    outline: none;
+    width: 100%;
+    border: none;
+    padding-left: 10px;
+  }
+
+  .search-input-field {
+    border-color: white;
+
+    label {
+      color: #ced4da;
+
+      &.Mui-focused {
+        color: #ced4da;
+      }
+    }
+
+    .MuiInput-underline {
+      &::before {
+        border-bottom-color: white;
+      }
+
+      &::after {
+        border-bottom-color: white
+      }
+    }
+
+    input {
+      color: white;
+      border-color: white;
+    }
+  }
+
+  .mt-22 {
+    margin-top: 22px;
+  }
+
+  .select-props {
+    color: white;
+    width: 100%;
+
+    .MuiSelect-select {
+      option {
+        background: #262B33;
+      }
+    }
+
+    svg {
+      color: white;
+    }
+  }
+
+
+  .MuiButton-root {
+    color: #7F8185;
+  }
+
+
+  .eventcreate-page {
+    color: white;
+  }
+
+  .segment-parent {
+    padding: 16px;
+  }
+
+  .MuiTypography-body1 {
+    padding-left: 4px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .eventcreate-page {
+    padding: 35px 0 100px;
+
+    .eventcreate-content {
+      padding: 21px 23px 47px 23px;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .eventcreate-page {
+    padding: 15px 0 25px;
+
+    .eventcreate-content {
+      padding: 15px 12px 27px 12px;
+    }
+  }
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#map {
+  height: 300px;
+}
+
+.MuiTypography-colorTextSecondary {
+  color: white !important;
+}
+
+.SegmentedControl-buttonSelected-12 {
+  color: white !important;
+}
+
+.SegmentedControl-buttonSelected-513 {
+  color: white !important;
+}
+
+.SegmentedControl-root-5 {
+  border-color: white;
+  border-radius: 4px;
+  padding-right: 2px;
+  padding-left: 2px;
+}
+
+.segment-props {
+  color: white !important;
+}
+
+.SegmentedControl-buttonSelected-28 {
+  color: white !important;
+}
+
+.toggle-wrapper {
+  margin: 0.5em auto;
+}
+
+.toggle-wrapper label {
+  padding: 0.3em;
+  font-size: 17px;
+  display: block;
+}
+
+.toggleContainer {
+  width: 100%;
+  position: relative;
+  background: #262C34;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+.toggleContainer .toggleOption {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  color: #807b77;
+  font-size: 1em;
+
+}
+
+.toggleContainer .toggleOption.selected {
+  color: #ffffff;
+  cursor: initial;
+  border-radius: 8px;
+}
+
+.toggleContainer .toggle {
+  position: absolute;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+  background: #7F8185;
+  border-radius: 8px;
+}
+
+.optionDisabled {
+  background: #262C34;
+  cursor: no-drop !important;
+}
+
+.eventcreate-page .MuiTypography-body1 {
+  color: white;
+}

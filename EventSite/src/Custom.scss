@@ -1,0 +1,269 @@
+@import './Theme.scss';
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 900;
+}
+
+p {
+    font-size: 15px;
+}
+
+input, textarea {
+    box-shadow: none;
+    outline: none;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+.v-r {
+    display: flex;
+    flex-direction: column;
+}
+
+.v-c {
+    display: flex;
+    align-items: center;
+}
+
+.h-c {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.btn-primary {
+    color: black !important;
+    background-color: $primary-bg !important;
+}
+
+.btn-round {
+	border-radius: 26px !important;
+}
+
+.custom-container {
+    display: flex !important;
+}
+
+.MuiButtonBase-root {
+    padding: 0 !important;
+    text-transform: none !important;
+}
+
+.MuiPaper-root {
+	.MuiButton-label {
+		color: white;
+	}
+}
+
+.shadow-object {
+    box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+}
+
+.custom-input {
+  color: white !important;
+  background-color: $second-bg;
+  fieldset {
+    border-color: rgba($color: #707070, $alpha: 0.15);
+  }
+  ::placeholder {
+    color: $secondary-text;
+  }
+}
+
+.sub-block {
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba($color: #000000, $alpha: 0.16);
+	background: $main-bg;
+	margin-bottom: 15px;
+	display: flex;
+	flex-direction: column;
+	.title-part {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 8px;
+		.block-title {
+			border-left: 2px solid #FF3366;
+			padding-left: 6px;
+		}
+		.search-element {
+			color: #878A91;
+			background: $second-bg;
+			.MuiSelect-root {
+				padding-top: 8px;
+				padding-bottom: 8px;
+			}
+			fieldset {
+				border-color: #878A91;
+			}
+			svg {
+				color: #878A91;
+			}
+			option {
+				color: #878A91;
+				background-color: $second-bg !important;
+			}
+		}
+	}
+}
+
+.rt-th {
+	text-align: left;
+	color: #7882A2;
+}
+
+.rt-tr {
+	&.-odd {
+		background-color: $second-bg !important;
+	}
+}
+
+.pagination-bottom {
+	.-btn {
+		color: #7882A2 !important;
+		&:hover {
+			color: white !important;
+		}
+		&:disabled {
+			color: initial !important;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+    .show-web {
+        display: block;
+    }
+
+    .show-web-flex {
+        display: flex;
+    }
+
+    .show-mobile, .show-mobile-flex {
+        display: none !important;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: $main-bg;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #1B1F25; 
+        border-radius: 40px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #BDBDBD; 
+    }
+
+    .MuiContainer-root {
+        padding-left: 78px !important;
+        padding-right: 78px !important;
+	}
+	
+	.admin-title {
+		display: none;
+	}
+
+	.sub-block {
+		.title-part {
+			.block-title {
+				font-size: 18px;
+			}
+			.search-element {
+				height: 30px;
+				font-size: 12px;
+				option {
+					font-size: 12px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+    .show-mobile {
+        display: block;
+    }
+
+    .show-web, .show-web-flex {
+        display: none !important;
+    }
+
+    .show-mobile-flex {
+        display: flex;
+	}
+	
+	.admin-title {
+		font-size: 24px;
+		line-height: 35px;
+		margin-bottom: 6px;
+	}
+
+	.sub-block {
+		.title-part {
+			.block-title {
+				font-size: 13px;
+			}
+			.search-element {
+				height: 30px;
+				font-size: 10px;
+				option {
+					font-size: 10px;
+				}
+			}
+		}
+	}
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('./Assets/Font/SourceSansPro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    font-weight: bold;
+    src: url('./Assets/Font/SourceSansPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    font-style: italic;
+    src: url('./Assets/Font/SourceSansPro-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    font-weight: 300;
+    src: url('./Assets/Font/SourceSansPro-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    font-weight: 600;
+    src: url('./Assets/Font/SourceSansPro-SemiBold.ttf') format('truetype');
+}

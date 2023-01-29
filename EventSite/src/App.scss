@@ -1,0 +1,47 @@
+@import './Theme.scss';
+@import './Custom.scss';
+@import '~@fullcalendar/core/main.css';
+@import '~@fullcalendar/daygrid/main.css';
+@import "~react-table/react-table.css";
+
+body {
+  margin: 0;
+  font-family: SourceSansPro;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $primary-text;
+  &.modal-open {
+    overflow: hidden;
+  }
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $main-bg;
+
+  #main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      padding-top: 60px;
+    }
+
+    &.blur {
+      &:before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(black, 0.45);
+        z-index: 15;
+      }
+    }
+  }
+}

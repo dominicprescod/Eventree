@@ -1,0 +1,84 @@
+@import '../../../Theme.scss';
+
+.settings-page {
+	.block-title {
+		font-weight: bold;
+	}
+	.MuiGrid-container {
+		.MuiGrid-item {
+			height: 100%;
+			padding-bottom: 0;
+			.sub-block {
+				height: 100%;
+				margin-bottom: 0;
+			}
+		}
+	}
+	.menus-area {
+		background: $second-bg;
+		.menus {
+			flex: 1;
+			overflow-y: auto;
+			margin: 15px -15px 0 -15px;
+			padding: 0 15px;
+			.menu-item {
+				cursor: pointer;
+				margin: 0 -15px 10px -15px;
+				padding: 9px 15px;
+				background-image: linear-gradient(to right, $main-bg , $second-bg);
+				p {
+					margin-left: 15px;
+				}
+				&:last-child {
+					margin-bottom: none;
+				}
+				&.selected {
+					color: #97DC21;
+				}
+			}
+		}
+	}
+	.setting-area {
+		.title-part {
+			margin: 0 -15px;
+			padding: 0 15px 12px 15px;
+			border-bottom: 1px solid #707070;
+			.block-title {
+				border: none;
+				padding: 0;
+			}
+		}
+		.main-area {
+			flex: 1;
+			height: calc(100% - 38px);
+			margin: 0 -15px;
+			padding: 15px 15px 0 15px;
+			overflow-y: auto;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.settings-page {
+		height: 100%;
+		.MuiGrid-container {
+			height: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.settings-page {
+		height: calc(100vh - 90px);
+		.back-btn {
+			margin-right: 10px;
+			color: white;
+		}
+		.block-title {
+			font-size: 18px !important;
+		}
+		.MuiGrid-container {
+			height: 100%;
+		}
+	}
+}

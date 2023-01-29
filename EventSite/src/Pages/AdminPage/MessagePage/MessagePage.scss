@@ -1,0 +1,179 @@
+@import '../../../Theme.scss';
+
+.message-page {
+	.block-title {
+		font-weight: bold;
+	}
+	.custom-input {
+		border-radius: 26px;
+		height: 40px;
+		font-size: 13px;
+		&.search-input {
+			margin-top: 12px;
+		}
+		.input-icon {
+			color: #878A91;
+		}
+	}
+	.MuiGrid-container {
+		.MuiGrid-item {
+			height: 100%;
+			padding-bottom: 0;
+			.sub-block {
+				height: 100%;
+				margin-bottom: 0;
+			}
+		}
+	}
+	.contact-area {
+		.select-area {
+			margin: 20px 0 15px;
+			justify-content: space-between;
+			.select-btn {
+				height: 35px;
+				width: calc(50% - 5px);
+				&.selected {
+					background-color: #97DC21;
+				}
+			}
+		}
+		.contacts {
+			flex: 1;
+			overflow-y: auto;
+			margin: 0 -15px;
+			padding: 0 15px;
+			.contact-item {
+				cursor: pointer;
+				margin: 0 -15px;
+				padding: 9px 15px;
+				img {
+					width: 60px;
+					height: 60px;
+					margin-right: 10px;
+					border-radius: 50%;
+				}
+				.contact-info {
+					flex: 1;
+					max-width: calc(100% - 70px);
+					p {
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						&.name {
+							font-size: 16px;
+							font-weight: bold;
+							margin-bottom: 5px;
+						}
+						&.last-message {
+							font-size: 14px;
+							color: #777777;
+						}
+					}
+				}
+				&.selected {
+					background: $second-bg;
+				}
+			}
+		}
+	}
+	.chat-area {
+		.title-part {
+			margin: 0 -15px;
+			padding: 0 15px 12px 15px;
+			border-bottom: 1px solid #707070;
+			.block-title {
+				border: none;
+				padding: 0;
+			}
+		}
+		.conversation-area {
+			flex: 1;
+			height: calc(100% - 38px);
+			padding-top: 15px;
+			.message-area {
+				flex: 1;
+				margin: 0 -15px;
+				padding: 0 15px;
+				display: flex;
+				flex-direction: column-reverse;
+				overflow-y: auto;
+				.message-item {
+					padding: 8px 14px;
+					background: $second-bg;
+					border-radius: 10px;
+					max-width: 70%;
+					min-width: 50px;
+					width: fit-content;
+					margin-top: 15px;
+					p {
+						font-size: 15px;
+						line-height: 17px;
+						white-space: pre-wrap;
+						&:first-child {
+							margin-bottom: 8px;
+						}
+						&:last-child {
+							font-size: 12px;
+							line-height: 9px;
+							color: #46C79E;
+							font-weight: bold;
+						}
+					}
+					&.mine {
+						margin-left: auto;
+						background: #E8F0FE;
+						p {
+							&:first-child {
+								color: $main-bg;
+							}
+						}
+					}
+				}
+			}
+			.send-area {
+				display: flex;
+				padding-top: 15px;
+				.MuiTextField-root {
+					flex: 1;
+				}
+				.message-input {
+					min-height: 40px;
+					height: initial;
+				}
+				.send-btn {
+					background: #46C79E;
+					min-width: 40px;
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					margin: auto 0 5px 10px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.message-page {
+		height: 100%;
+		.MuiGrid-container {
+			height: 100%;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.message-page {
+		height: calc(100vh - 90px);
+		.back-btn {
+			margin-right: 10px;
+			color: white;
+		}
+		.block-title {
+			font-size: 18px !important;
+		}
+		.MuiGrid-container {
+			height: 100%;
+		}
+	}
+}

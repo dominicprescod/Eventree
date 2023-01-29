@@ -1,0 +1,137 @@
+@import '../../Theme.scss';
+
+.communitythumb-component {
+  position: relative;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 10px;
+  img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .publish_btn {
+    background: white;
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    border-radius: 50%;
+    padding: 0;
+    position: absolute;
+    top: 19px;
+    right: 17px;
+    color: $main-bg;
+    font-size: 20px;
+  }
+  .description {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    white-space: pre;
+  }
+  .community-content {
+    background: $main-bg;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    .title-part {
+      justify-content: space-between;
+      display: flex;
+      h2 {
+        flex: 1;
+      }
+      .like-btn {
+        cursor: pointer;
+        width: fit-content;
+        margin-left: 35px;
+        text-align: right;
+        justify-content: flex-end;
+        height: fit-content;
+        p {
+          margin-right: 5px;
+        }
+      }
+    }
+    .created_time {
+      margin: 6px 0 12px;
+      line-height: 30px;
+    }
+    .read-btn {
+      width: 156px;
+      height: 44px;
+      border-radius: 26px;
+      border-color: $primary-bg;
+      color: $primary-bg;
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .communitythumb-component {
+    img {
+      height: 400px;
+    }
+    .community-content {
+      padding: 20px 12px 29px 35px;
+      .title-part {
+        h2 {
+          font-size: 19px;
+          line-height: 30px;
+        }
+        .like-btn {
+          p {
+            font-size: 15px;
+            line-height: 30px;
+          }
+          svg {
+            font-size: 17px;
+          }
+        }
+      }
+      .created_time {
+        font-size: 19px;
+      }
+      .description {
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .communitythumb-component {
+    img {
+      width: 100%;
+    }
+    .community-content {
+      padding: 8px 15px 25px;
+      .title-part {
+        h2 {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        .like-btn {
+          p {
+            font-size: 12px;
+            line-height: 24px;
+          }
+          svg {
+            font-size: 15px;
+          }
+        }
+      }
+      .created_time {
+        font-size: 14px;
+      }
+      .description {
+        font-size: 12px;
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

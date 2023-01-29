@@ -1,0 +1,97 @@
+@import '../../Theme.scss';
+
+.signin-page {
+	.auth-container {
+		max-width: 530px;
+		width: 100%;
+		margin-top: 30px;
+		border-radius: 10px;
+		h1 {
+				font-weight: normal;
+			font-size: 30px;
+			line-height: 43px;
+			margin-bottom: 45px;
+			text-align: center;
+			color: $primary-bg;
+		}
+		p {
+			font-size: 12px;
+			&.or {
+				margin-bottom: 13px;
+			}
+		}
+		form {
+			width: 100%;
+			.MuiTextField-root {
+				margin-bottom: 16px;
+			}
+			.auth-input {
+				background-color: $second-bg;
+				height: 44px;
+				color: $secondary-text;
+				fieldset {
+					border-color: rgba($color: #707070, $alpha: 0.15);
+				}
+				::placeholder {
+					color: $secondary-text;
+					opacity: 0.8;
+				}
+				input {
+					font-size: 12px;
+				}
+			}
+		}
+		.auth-btn {
+			height: 50px;
+			border-radius: 26px;
+			font-size: 14px;
+			font-weight: bold;
+			margin-bottom: 13px;
+			color: white;
+			img {
+				margin-right: 8px;
+			}
+			&.facebook {
+				background-color: #3C599B;
+			}
+			&.gplus {
+				background-color: #E3411F;
+			}
+		}
+		.custom-writings {
+			color: $primary-bg;
+			width: 100%;
+			font-size: 12px;
+			margin-bottom: 13px;
+			a {
+				color: $secondary-text;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.signin-page {
+		.auth-container {
+			padding: 18px 60px 36px 60px;
+			.custom-writings {
+				justify-content: space-between;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.signin-page {
+		.auth-container {
+			padding: 18px 10px;
+			.custom-writings {
+				flex-direction: column;
+				&:last-child {
+					margin-top: 20px;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
