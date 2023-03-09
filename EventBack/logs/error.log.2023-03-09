@@ -1,0 +1,7 @@
+2023-03-09 07:33:28 [Eventree] error: API response error:Not Found
+2023-03-09 07:33:28 [Eventree] error: API response error:Not Found
+2023-03-09 16:43:20 [Eventree] error: Error on sending activation code:Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials n16-20020ac81e10000000b003b9a73cd120sm108457qtl.17 - gsmtp
+2023-03-09 17:06:44 [Eventree] error: Error on sending activation code:Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials p20-20020a05622a13d400b003bfaf01af24sm132176qtk.46 - gsmtp
+2023-03-09 17:07:54 [Eventree] error: Error on update token:Validation error
